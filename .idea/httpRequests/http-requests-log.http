@@ -1,3 +1,27 @@
+GET http://localhost:80/addressbook
+
+<> 2021-02-11T220508.200.json
+
+###
+
+GET http://localhost:80/addressbook
+
+<> 2021-02-11T220459.200.json
+
+###
+
+GET http://localhost:80/book
+
+<> 2021-02-11T220405.404.json
+
+###
+
+GET http://localhost:80/addressBook
+
+<> 2021-02-11T220219.404.json
+
+###
+
 POST http://localhost:80/addressbook
 Content-Type: application/json
 
@@ -317,34 +341,6 @@ Content-Type: application/json
 {"name":  "sarah", "phone_num":  "612239", "address":  "278323 M", "id": 1}
 
 <> 2021-02-05T110102.404.json
-
-###
-
-GET http://localhost:8090/books
-Accept: application/json
-
-<> 2021-02-05T105426.200.json
-
-###
-
-GET http://localhost:8090/book
-Accept: application/json
-
-<> 2021-02-05T105409.404.json
-
-###
-
-GET http://localhost:8090/book
-Accept: application/json
-
-<> 2021-02-05T104654.404.json
-
-###
-
-GET http://localhost:8090/book?id=1
-Accept: application/json
-
-<> 2021-02-05T103930.404.json
 
 ###
 

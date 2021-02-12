@@ -1,12 +1,24 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>AddressBook</title>
+    <title>Getting Started: Serving Web Content</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
-
 <body>
-<h1>Result</h1>
+<section th:each="addressBook: ${buddies}">
+    <h2>Address Book: <th:block th:utext="${addressBook.id}"/></h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <td>#</td>
+            <td>Name</td>
+            <td>Phone Number</td>
+        </tr>
+        </thead>
+        <tbody>
 
+        </tbody>
+    </table>
+</section>
 </body>
 </html>
