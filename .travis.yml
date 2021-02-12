@@ -6,4 +6,4 @@ deploy:
   api-key: $HEROKU_API_KEY
   app: sarahlamonica-lab5
   on:
-    branch: main
+    branch: master
