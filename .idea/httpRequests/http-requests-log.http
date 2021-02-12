@@ -1,0 +1,350 @@
+POST http://localhost:80/addressbook
+Content-Type: application/json
+
+{"name": "sarah", "address": "28923", "phone_num":  "287329", "id":  1}
+
+###
+
+GET http://localhost:80/addressbook
+Accept: application/json
+
+<> 2021-02-05T125859.200.json
+
+###
+
+GET http://localhost:80/addressbook
+Accept: application/json
+
+<> 2021-02-05T124956.200.json
+
+###
+
+POST http://localhost:80/addressbook
+Content-Type: application/json
+
+{"name": "sarah", "address": "28923", "phone_num":  "287329", "id":  1}
+
+###
+
+GET http://localhost:80/addressbook
+Accept: application/json
+
+###
+
+POST http://localhost:80/addressbook
+Content-Type: application/json
+
+{"name": "sarah", "address": "28923", "phone_num":  "287329", "id":  1}
+
+###
+
+GET http://localhost:80/addressbook
+Accept: application/json
+
+<> 2021-02-05T124702.200.json
+
+###
+
+POST http://localhost:8090/addressbook
+Content-Type: application/json
+
+{"name": "sarah", "address": "28923", "phone_num":  "287329", "id":  1}
+
+###
+
+GET http://localhost:8090/addressbook
+Accept: application/json
+
+###
+
+POST http://localhost:8090/addressbook
+Content-Type: application/json
+
+{"name": "sarah", "address": "28923", "phone_num":  "287329", "id":  1}
+
+###
+
+GET http://localhost:8090/addressbook
+Accept: application/json
+
+<> 2021-02-05T124442.200.json
+
+###
+
+POST http://localhost:8090/addressbook
+Content-Type: application/json
+
+{"name": "sarah", "address": "28923", "phone_num":  "287329", "id":  1}
+
+###
+
+GET http://localhost:8090/addressbook
+Accept: application/json
+
+<> 2021-02-05T124152.200.json
+
+###
+
+POST http://localhost:8090/addressbook
+Content-Type: application/json
+
+{"name": "sarah", "address": "28923", "phone_num":  "287329", "id":  1}
+
+###
+
+GET http://localhost:8090/addressbook
+Accept: application/json
+
+###
+
+POST http://localhost:8090/addressbook
+Content-Type: application/json
+
+{"name": "sarah", "address": "28923", "phone_num":  "287329", "id":  1}
+
+###
+
+GET http://localhost:8090/addressbook
+Accept: application/json
+
+<> 2021-02-05T123911.200.json
+
+###
+
+POST http://localhost:8090/addressbook
+Content-Type: application/json
+
+{"name": "sarah", "address": "28923", "phone_num":  "287329", "id":  1}
+
+###
+
+GET http://localhost:8090/addressbook
+Accept: application/json
+
+<> 2021-02-05T122734.200.json
+
+###
+
+POST http://localhost:8090/addressbook
+Content-Type: application/json
+
+{"name": "sarah", "address": "28923", "phone_num":  "287329", "id":  1}
+
+###
+
+GET http://localhost:8090/addressbook
+Accept: application/json
+
+<> 2021-02-05T122652.200.json
+
+###
+
+POST http://localhost:8090/addressbook
+Content-Type: application/json
+
+{"name": "sarah", "address": "28923", "phone_num":  "287329", "id":  1}
+
+###
+
+GET http://localhost:8090/addressbook
+Accept: application/json
+
+<> 2021-02-05T121145.200.json
+
+###
+
+POST http://localhost:8090/addressbook
+Content-Type: application/json
+
+{"name": "sarah", "address": "28923", "phone_num":  "287329", "id":  1}
+
+###
+
+GET http://localhost:8090/addressbook
+Accept: application/json
+
+<> 2021-02-05T120653.200.json
+
+###
+
+GET http://localhost:8090/addressbook
+Accept: application/json
+
+<> 2021-02-05T120430.200.json
+
+###
+
+GET http://localhost:8090/books
+Accept: application/json
+
+<> 2021-02-05T120421.404.json
+
+###
+
+GET http://localhost:8090/books
+Accept: application/json
+
+<> 2021-02-05T120354.404.json
+
+###
+
+POST http://localhost:8090/books/addbuddy
+Content-Type: application/json
+
+{"name": "sarah", "address": "28923", "phone_num":  "287329", "id":  1}
+
+<> 2021-02-05T120353.404.json
+
+###
+
+GET http://localhost:8090/books
+Accept: application/json
+
+<> 2021-02-05T120334-1.404.json
+
+###
+
+POST http://localhost:8090/books/addbuddy
+Content-Type: application/json
+
+{"name": "sarah", "address": "28923", "phone_num":  "287329", "id":  1}
+
+<> 2021-02-05T120334.404.json
+
+###
+
+GET http://localhost:8090/addressbook
+Accept: application/json
+
+###
+
+GET http://localhost:8090/addressbook
+Accept: application/json
+
+<> 2021-02-05T113754.200.json
+
+###
+
+GET http://localhost:8090/books
+Accept: application/json
+
+###
+
+POST http://localhost:8090/buddies/addbuddy
+Content-Type: application/json
+
+{"name": "sarah", "address": "28923", "phone_num":  "287329", "id":  1}
+
+###
+
+GET http://localhost:8090/books
+Accept: application/json
+
+###
+
+POST http://localhost:8090/buddies/addbuddy
+Content-Type: application/json
+
+{"name": "sarah", "address": "28923", "phone_num":  "287329", "id":  1}
+
+###
+
+GET http://localhost:8090/books
+Accept: application/json
+
+<> 2021-02-05T112730.200.json
+
+###
+
+POST http://localhost:8090/buddies/addbuddy
+Content-Type: application/json
+
+{"name": "sarah", "address": "28923", "phone_num":  "287329", "id":  1}
+
+<> 2021-02-05T112730.404.json
+
+###
+
+GET http://localhost:8090/books
+Accept: application/json
+
+<> 2021-02-05T112541.200.json
+
+###
+
+POST http://localhost:8090/books/addbuddy
+Content-Type: application/json
+
+{"name": "sarah", "address": "28923", "phone_num":  "287329", "id":  1}
+
+<> 2021-02-05T112541.404.json
+
+###
+
+GET http://localhost:8090/books
+Accept: application/json
+
+<> 2021-02-05T111250.200.json
+
+###
+
+GET http://localhost:8090/books
+Accept: application/json
+
+<> 2021-02-05T110144.200.json
+
+###
+
+POST http://localhost:8090/books/addbuddy
+Content-Type: application/json
+
+{"name":  "sarah", "phone_num":  "612239", "address":  "278323 M", "id": 1}
+
+<> 2021-02-05T110144.404.json
+
+###
+
+GET http://localhost:8090/books
+Accept: application/json
+
+<> 2021-02-05T110102.200.json
+
+###
+
+POST http://localhost:8090/books/addbuddy
+Content-Type: application/json
+
+{"name":  "sarah", "phone_num":  "612239", "address":  "278323 M", "id": 1}
+
+<> 2021-02-05T110102.404.json
+
+###
+
+GET http://localhost:8090/books
+Accept: application/json
+
+<> 2021-02-05T105426.200.json
+
+###
+
+GET http://localhost:8090/book
+Accept: application/json
+
+<> 2021-02-05T105409.404.json
+
+###
+
+GET http://localhost:8090/book
+Accept: application/json
+
+<> 2021-02-05T104654.404.json
+
+###
+
+GET http://localhost:8090/book?id=1
+Accept: application/json
+
+<> 2021-02-05T103930.404.json
+
+###
+

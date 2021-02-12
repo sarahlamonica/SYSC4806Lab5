@@ -1,0 +1,32 @@
+{
+  "_embedded": {
+    "AddressBook": [
+      {
+        "name": "sarah",
+        "friends": [],
+        "_links": {
+          "self": {
+            "href": "http://localhost:8090/addressbook/1"
+          },
+          "addressBook": {
+            "href": "http://localhost:8090/addressbook/1"
+          },
+          "buddies": {
+            "href": "http://localhost:8090/addressbook/1/buddies"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "http://localhost:8090/addressbook"
+    },
+    "profile": {
+      "href": "http://localhost:8090/profile/addressbook"
+    },
+    "search": {
+      "href": "http://localhost:8090/addressbook/search"
+    }
+  }
+}

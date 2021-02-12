@@ -1,0 +1,16 @@
+{
+  "_embedded": {
+    "AddressBook": []
+  },
+  "_links": {
+    "self": {
+      "href": "http://localhost:8090/books"
+    },
+    "profile": {
+      "href": "http://localhost:8090/profile/books"
+    },
+    "search": {
+      "href": "http://localhost:8090/books/search"
+    }
+  }
+}
