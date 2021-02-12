@@ -3,6 +3,5 @@ jdk:
   - oraclejdk15
 deploy:
   provider: heroku
-    api-key: 070ad9ff-756a-4c66-82fe-701201fe7e5f
-    secure: $HEROKU_API_KEY
+  api-key: $HEROKU_API_KEY
   app: sarahlamonica-lab5
