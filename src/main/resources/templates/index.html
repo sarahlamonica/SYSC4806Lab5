@@ -5,22 +5,46 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<p>Your Address Book <a href="/addressBookView">here</a></p>
-
-<section th:each="addressBook: ${buddies}">
-    <h2>Address Book: <th:block th:utext="${addressBook.id}"/></h2>
-    <table class="table">
+<section th:each="addressBook: ${allAddressBooks}">
+    <h2>Book id: <th:block th:utext="${addressBook.getId()}"/></h2>
+    <table border="2">
         <thead>
         <tr>
-            <td>#</td>
-            <td>Name</td>
-            <td>Phone Number</td>
+            <td>Buddy</td>
+            <td>Buddy Name</td>
         </tr>
         </thead>
         <tbody>
-
+        <tr th:each="buddy: ${addressBook.getBuddies()}">
+            <td th:text="${buddy.getId()}" />
+            <td th:text="${buddy.getName()}" />
+        </tr>
         </tbody>
+
     </table>
 </section>
+
+<table>
+    <tbody>
+    <tr>
+        <br>
+        <br>
+        <h3>Address Book - Add a New Buddy</h3>
+        <br>
+        <form action="#" th:action="@{/addressBook-add}" th:object="${newBuddy}" method="post">
+            Name: <input type="text" id="name" th:field="*{name}"> <br>
+            <br>
+            Phone Number: <input type="text" id="phoneNumber" th:field="*{phone_num}"> <br>
+            <br>
+            Home Address: <input type="text" id="homeAddress" th:field="*{address}"> <br>
+            <br>
+            Address Book ID :<input type="text" id="bookID" th:field="*{addressBook}"> <br>
+            <br>
+            <button type="submit">Add a New Buddy</button>
+        </form>
+    </tr>
+    </tbody>
+</table>
+
 </body>
 </html>

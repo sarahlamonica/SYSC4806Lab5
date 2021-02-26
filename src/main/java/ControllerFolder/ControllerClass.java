@@ -1,9 +1,11 @@
 package ControllerFolder;
 import ModelFolder.AddressBook;
 import ModelFolder.AddressBookRepo;
+import ModelFolder.BuddyInfo;
 import ModelFolder.BuddyRepo;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,18 +27,21 @@ public class ControllerClass {
     private BuddyRepo buddy;
 
     @GetMapping("/")
-    public String getAddressBook(Model model)
+    public String getAddressBook(@ModelAttribute BuddyInfo buddy, Model model)
     {
-        AddressBook aBook = book.findAll().get(0);
-        model.addAttribute("buddies", aBook.getBuddies());
-        return "book";
+        Collection<AddressBook> aBook = book.findAll();
+       // model.addAttribute("buddies", aBook.getBuddies());
+        model.addAttribute("newBuddy", new BuddyInfo());
+        model.addAttribute("allAddressBooks", aBook);
+        return "";
     }
 
-    @GetMapping(path = "/addressBookView")
-    public String addressBookView(Model model) {
+    @GetMapping("/addressBookView")
+    public String addressBook1(@ModelAttribute BuddyInfo buddy, Model model) {
 
         Collection<AddressBook> addressBooks = book.findAll();
-        model.addAttribute("buddies", addressBooks);
+        model.addAttribute("allAddressBooks", addressBooks);
+        model.addAttribute("newBuddy", new BuddyInfo());
         return "addressBookView";
     }
 
@@ -48,6 +53,18 @@ public class ControllerClass {
         book.save(aBook);
         model.addAttribute("buddies", aBook.getBuddies());
         return "book";
+    }
+
+
+    @PostMapping("/addressBook-add")
+    public String addBuddy(@ModelAttribute BuddyInfo buddy, Model model) {
+
+        AddressBook aBook  = book.findById(buddy.getId()).orElse(new AddressBook());
+
+        aBook.addBuddy(new BuddyInfo(buddy.getName(), buddy.getPhone_num()));
+
+        model.addAttribute("addressBook", book);
+        return "addressBookStep1";
     }
 
 
