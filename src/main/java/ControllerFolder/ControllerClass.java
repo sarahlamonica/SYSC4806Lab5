@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
+import java.util.Collection;
+
 /**
  * Controller class
  */
@@ -28,6 +30,14 @@ public class ControllerClass {
         AddressBook aBook = book.findAll().get(0);
         model.addAttribute("buddies", aBook.getBuddies());
         return "book";
+    }
+
+    @GetMapping(path = "/addressBookView")
+    public String addressBookView(Model model) {
+
+        Collection<AddressBook> addressBooks = book.findAll();
+        model.addAttribute("buddies", addressBooks);
+        return "addressBookView";
     }
 
     @PostMapping("/addbuddy")
